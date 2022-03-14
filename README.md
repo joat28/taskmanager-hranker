@@ -6,7 +6,7 @@ A Simple task management and sharing application
 
 
 
-![Logo](https://socialify.git.ci/joat28/taskmanager/image?description=1&font=Source%20Code%20Pro&language=1&name=1&owner=1&pattern=Plus&theme=Dark)
+![Logo](https://socialify.git.ci/joat28/taskmanager-hranker/image?description=1&language=1&name=1&owner=1&theme=Dark)
 
 
 ## Installation
