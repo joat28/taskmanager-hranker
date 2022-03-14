@@ -1,0 +1,59 @@
+Frontend:
+	1. Endpoints:
+		a. /auth/login 
+		b. /auth/register
+		c. /home
+	2. Make a global Auth object, with following functions:
+		a. login
+		b. logout
+		c. constructor
+		d. isAuthenticated field
+
+
+
+
+
+Backend:
+	1. Sign in and register using password and email
+	2. Use express-sessions to store the user session
+	3. Middlewares:
+		a. Populate user
+		b. RedirectLogin
+	4. Use MongoDb to store the users
+	5. User Schema:
+		name
+		email
+		password
+		tasks: [
+			{
+				title: String,
+				shared: boolean			
+			}	
+		]
+		requested: [
+			{
+				title: String,
+				sharedby: String(username of that user)
+				// there will be 2 options - accept or reject
+				// if accepted, delete from requested array, and add in tasks (title=sameTitle, shared=false)
+				// if deleted, delete from requested array
+			}
+		]
+	6. Models:
+		user
+	7. Controllers: 
+		taskController:
+			addTask
+			deleteTask
+			shareTask(email)  
+		authController:
+			login
+			register
+	8. Routes:
+		/api/auth/login
+		/api/auth/register
+		/api/home   [Protected API endpoint, gives all public info about the user]
+
+		
+
+	
